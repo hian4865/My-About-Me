@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 style="font-weight: bold; color: rgb(247, 193, 113);">My Contact Form!</h1>
+        <nav>
+         | <a href="[insert itch account]" style="color: rgb(247, 193, 113);">My itch.io</a> |
+           <a href="[insert Steam Page]" style="color: rgb(247, 193, 113);">My Steam Page</a> |
+           <a href="../index.html" style="color: rgb(247, 193, 113);">My About Me</a> |           
+           <a href="cssProjects/index.html" style="color: rgb(247, 193, 113);">My CSS Projects</a> |
+           <!--Haven't actually created these yet, will probably change to actual working sites-->
+        </nav>
+    </header>
+
+    <main>
+            <form class="contact-form" id="contactForm">
+                <h2>Contact me here! Be sure to fill in all the details.</h2>
+
+                <!-- Inputs for my needed details -->
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+
+                    <label for="phone">Your Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="123-456-7890">
+
+                    <label for="time">When would you like me to contact you?</label>
+                    <input type="time" id="time">
+
+                    <label for="reason">What do you want to contact me about?</label>
+                    <input type="text" id="reason" value="Just want to chat">
+            
+                <!-- Buttons to tell me which type of contact you want me to do -->
+                    <label>Preferred Contact Method:</label>
+
+                    <div class="inline-options">
+                        <label><input type="radio" name="contactMethod" value="Email" checked> Email</label>
+
+                        <label><input type="radio" name="contactMethod" value="Phone"> Phone</label>
+                    </div>
+                
+                <!-- Boxes to check off the wanted services -->
+                    <label>Services Interested In:</label>
+
+                    <div class="inline-options">
+                        <label><input type="checkbox" name="service" value="Game Design"> Game Design</label>
+
+                        <label><input type="checkbox" name="service" value="Story Writing"> Story Writing</label>
+
+                        <label><input type="checkbox" name="service" value="Art Style Advice"> Art Style Advice</label>
+
+                        <label><input type="checkbox" name="service" value="Other"> Anything else</label>
+                    </div>
+                
+                <!-- The specific topic you want me to cover in those services-->
+                    <label for="topic">Topic:</label>
+
+                    <select id="topic">
+                        <option value="General Question">General Question on my Game</option>
+
+                        <option value="Game Code help">Help me with my Code</option>
+                        
+                        <option value="Advice">Advise Me</option>
+                    </select>
+                
+                <!-- Text needed to even more specify the contacters needs -->
+                    <label for="message">Leave a message to specify your needs!</label>
+                        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            
+                <!-- Just a button to submit the form -->
+                    <button type="submit">Send</button>
+            </form>
+
+    </main>
+
+    <footer>
+        <p>Created and Published by Ian Harris</p>
+        <a href="mailto:hian87788@gmail.com" style="color: rgb(247, 193, 113);">My gmail!</a>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+    </body>
+</html>
