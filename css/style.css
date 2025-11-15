@@ -1,0 +1,38 @@
+header {
+    /* Will add more configurations later */
+    text-align: center;
+    background-color: #8B0000; 
+    padding: 20px;
+    border-bottom: 4px solid rgb(247, 193, 113); 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    color: antiquewhite;
+}
+
+nav a {
+    color: aquamarine;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;   
+    margin: auto;
+}
+
+main section{
+    border-bottom: 2px solid black;
+    padding: 20px;
+    margin: 0 40px;
+}
+
+
+footer {
+    background-color: #8B0000; 
+    color: rgb(247, 193, 113);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-small;
+    text-align: center;
+}
