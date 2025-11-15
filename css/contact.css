@@ -1,0 +1,136 @@
+header {
+    /* Will add more configurations later */
+    text-align: center;
+    background-color: #8B0000; 
+    padding: 20px;
+    border-bottom: 4px solid rgb(247, 193, 113); 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    color: antiquewhite;
+}
+
+nav a {
+    color: aquamarine;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;   
+    margin: auto;
+}
+
+/* Used the example css as a basis and updated it to suit my original CSS style */
+
+.contact-form {
+    background: #8B0000;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-form h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 30px;
+    border: solid 4px rgb(247, 193, 113);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(247, 193, 113);
+}
+
+.contact-form label {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    padding: 3px;
+    color: rgb(247, 193, 113);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(247, 193, 113);
+    border: none;
+    color: #8B0000;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.contact-form button:hover {
+    background-color: #ffda88;
+}
+.inline-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stylized results table container */
+#resultContainer {
+    max-width: 700px;
+    margin: 30px auto;
+    background: #8B0000;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    width: 80%;
+    color: rgb(247, 193, 113);
+    font-family: 'Times New Roman', Times, serif;
+    border: 4px solid rgb(247, 193, 113);
+}
+
+/* Table styling to match with rest of page */
+#resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#resultTable th, 
+#resultTable td {
+    border: 4px solid rgb(247, 193, 113);
+    padding: 12px;
+    text-align: center;
+    color: rgb(247, 193, 113);
+    background: #8B0000; 
+}
+
+#resultTable th {
+    background-color: #8B0000; 
+    color: rgb(247, 193, 113);
+    font-weight: bold;
+}
+
+footer {
+    background-color: #8B0000; 
+    color: rgb(247, 193, 113);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-small;
+    text-align: center;
+    border-top: 4px solid rgb(247, 193, 113);
+}

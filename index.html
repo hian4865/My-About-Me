@@ -4,82 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
 
     <header>
-        <h1 style="font-weight: bold; color: rgb(247, 193, 113);">Good Morning, Vietnam!</h1>
-        <nav> 
-            | <a href="cssProjects/index.html" style="color: rgb(247, 193, 113);">My CSS Projects</a> |
-           <a href="contactMe/index.html" style="color: rgb(247, 193, 113);">Contact Me</a> |
+        <h1 style="font-weight: bold; color: rgb(247, 193, 113);">My Contact Form!</h1>
+        <nav>
+        | <a href="../index.html" style="color: rgb(247, 193, 113);">My About Me</a> |           
+           <a href="../cssProjects/index.html" style="color: rgb(247, 193, 113);">My CSS Projects</a> |
         </nav>
     </header>
 
     <main>
-        
-        <section>
-            <h2 style="width: auto;"> About me: </h2>
-            <p>I am a small town gamer who has always had a dream of creating his own game. I wish to one day create a game that would have the same impact on the indie game industry as some of the bigger titles, like <b>Undertale</b> and <b>Hollow Knight</b>. Something that would invoke great amounts of emotion in people.</p>
-            <!--Insert a small autobiography-->        
-        </section>
+            <form class="contact-form" id="contactForm">
+                <h2>Contact me here! Be sure to fill in all the details.</h2>
 
+                <!-- Inputs for my needed details -->
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
 
-        <section>
-            <h3>An image from a local folder</h3>
-            <img src="img\picture_of_Blasphemous_cover_art.jpg" alt="The cover art of Blasphemous" width="250" height="400" style="border: 3px solid #000000; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0);">
-            <p>An image of the cover art for <b>Blasphemous</b>, a game that inspired me to try and make my own games.</p>
-        </section>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
 
-        <section>
-            <h2>A list of Goals:</h2>
-            <ul>
-                <li>I wish to publish at least 5 small games and 1-2 big games with DLC.</li>
-                <li>I wish to create at least one board game/card game in my life.</li>
-                <li>I wish to get better at my artwork and fill out 5 big sketch books.</li>
-                <li>After I've gotten some experience from writing my games, I wish to write a book.</li>
-            </ul>
-            <!--Insert a list of goals that I wish to complete as a gamedev-->
-        </section>
+                    <label for="phone">Your Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="123-456-7890">
 
-        <section>
-        <h3>An image that I found on Reddit</h3>
-        <img src="https://preview.redd.it/john-oblivion-himself-v0-3xjyoksmr3xe1.jpg?width=640&crop=smart&auto=webp&s=63afd7b4b3867124e6d5ea0c48c45c226677352b" alt="A picture of man really excited to play Oblivion" width="250" height="400" style="border: 3px solid #000000; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0);">
-        <p>This is an photograph of a man who got a copy of <b>Oblivion</b> for christmas, with an expression of excitement that I would like to bring to people with my games.</p>
-        </section>
+                    <label for="time">When would you like me to contact you?</label>
+                    <input type="time" id="time">
 
+                    <label for="reason">What do you want to contact me about?</label>
+                    <input type="text" id="reason" value="Just want to chat">
+            
+                <!-- Buttons to tell me which type of contact you want me to do -->
+                    <label>Preferred Contact Method:</label>
 
-        <section>
-            <h2>A small list of fun facts.</h2>
-            <ul>
-                <li>I started my college career early by attending Upward Bound since 9th grade.</li>
-                <li>I have an obsession with platinuming every game I touch and will hyper focus on a game until I collect every achievement.</li>
-                <li>I draw inspiration for my game ideas from games like <b>The Elder Scrolls II: Daggerfall</b>, <b>Blasphemous</b>, and <b>Fable</b>.</li>
-                <li>My favorite movie series is <i>The Lord of the Rings</i>.</li>
-                <li>I own about 20 decks of cards from <b>Magic the Gathering</b>.</li>
-            </ul>
-            <!--Insert a small list of fun facts, lets say 5-->
-            <!--When adding the CSS, will add symbols and more images-->
-        </section>
+                    <div class="inline-options">
+                        <label><input type="radio" name="contactMethod" value="Email" checked> Email</label>
 
-        <section>
-            <h2>My Birthday Hotspot</h2>
-                <iframe
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6603.819398720356!2d-86.840013!3d34.1486523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8889cbbf39747e09%3A0x5207e15f56c2eca0!2sAMC%20CLASSIC%20Marktplatz%2010!5e0!3m2!1sen!2sus!4v1757394024019!5m2!1sen!2sus" 
-                width="600" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-             
-            <p>This is the place that I used to go to on my birthday, my family and I would always watch the latest movie and even if it was a bad movie we would still laugh and have fun.</p>
-        </section>
+                        <label><input type="radio" name="contactMethod" value="Phone"> Phone</label>
+                    </div>
+                
+                <!-- Boxes to check off the wanted services -->
+                    <label>Services Interested In:</label>
 
-        <!--This is where future content shall be added-->
+                    <div class="inline-options">
+                        <label><input type="checkbox" name="service" value="Game Design"> Game Design</label>
+
+                        <label><input type="checkbox" name="service" value="Story Writing"> Story Writing</label>
+
+                        <label><input type="checkbox" name="service" value="Art Style Advice"> Art Style Advice</label>
+
+                        <label><input type="checkbox" name="service" value="Other"> Anything else</label>
+                    </div>
+                
+                <!-- The specific topic you want me to cover in those services-->
+                    <label for="topic">Topic:</label>
+
+                    <select id="topic">
+                        <option value="General Question">General Question on my Game</option>
+
+                        <option value="Game Code help">Help me with my Code</option>
+                        
+                        <option value="Advice">Advise Me</option>
+                    </select>
+                
+                <!-- Text needed to even more specify the contacters needs -->
+                    <label for="message">Leave a message to specify your needs!</label>
+                        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            
+                <!-- Just a button to submit the form -->
+                    <button type="submit">Send</button>
+            </form>
+
+            <!-- Table container -->
+                <div id="resultContainer" style="display:none;">
+                    <h2>All Information Submitted!</h2>
+                        <table id="resultTable" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Answer</th>
+                                    <!-- JS will add remaining rows -->
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                </div>
+
     </main>
 
     <footer>
@@ -87,5 +101,6 @@
         <a href="mailto:hian87788@gmail.com" style="color: rgb(247, 193, 113);">My gmail!</a>
     </footer>
 
-</body>
+    <script src="scripts/form.js"></script>
+    </body>
 </html>
