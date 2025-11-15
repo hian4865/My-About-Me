@@ -90,6 +90,43 @@ body {
     align-items: center;
 }
 
+/* Stylized results table container */
+#resultContainer {
+    max-width: 700px;
+    margin: 30px auto;
+    background: #8B0000;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    width: 80%;
+    color: rgb(247, 193, 113);
+    font-family: 'Times New Roman', Times, serif;
+    border: 4px solid rgb(247, 193, 113);
+}
+
+/* Table styling to match with rest of page */
+#resultTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#resultTable th, 
+#resultTable td {
+    border: 4px solid rgb(247, 193, 113);
+    padding: 12px;
+    text-align: center;
+    color: rgb(247, 193, 113);
+    background: #8B0000; 
+    overflow-wrap: break-word;
+}
+
+#resultTable th {
+    background-color: #8B0000; 
+    color: rgb(247, 193, 113);
+    font-weight: bold;
+}
+
 footer {
     background-color: #8B0000; 
     color: rgb(247, 193, 113);

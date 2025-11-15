@@ -18,10 +18,30 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
         .map(cb => cb.value)
         .join(", ") || "None";
 
-    // Displays it all in a neat little alert
-    alert(  `--- CONTACT FORM DATA ---\n\n` +
-    `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nPreferred Time: ${time}\nReason for Contact: ${reason}\nContact Method: ${contactMethod}\nServices Interested In:
-    ${services}\nTopic: ${topic}\nMessage: ${message}`);
+    // Create an array of key-value pairs
+    const formData = [
+        ["Name", name],
+        ["Email", email],
+        ["Phone", phone],
+        ["Preferred Time", time],
+        ["Contact Method", contactMethod],
+        ["Services Interested In", services],   
+        ["Topic", topic],
+        ["Message", message]
+    ];
+
+    // Shows off all results
+        const resultContainer = document.getElementById("resultContainer");
+        const resultBody = document.querySelector("#resultTable tbody");
+        resultBody.innerHTML = ""; // Clear any previous entries made
+        resultContainer.style.display = "block";
+
+    // Populates the table with information (Otherwise why have one?)
+        formData.forEach(([key, value]) => {
+            const row = document.createElement("tr");
+            row.innerHTML = `<td>${key}</td><td>${value}</td>`;
+            resultBody.appendChild(row);
+        });
 
     // Resets the form for multiple uses
     this.reset();
